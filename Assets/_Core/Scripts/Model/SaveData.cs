@@ -13,6 +13,6 @@ public class SaveData {
     public SaveData()
     {
         CashAmount = 0;
-
+        EnergyAmount = SettingsManager.GameSettings == null ? 0 : SettingsManager.GameSettings.TotalEnergy;
     }
 }
